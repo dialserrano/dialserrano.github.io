@@ -402,6 +402,8 @@ th {
 
 .mySlides {
   display: none;
+  display: flex;
+  text-align: center;
 }
 
 .gallery .video .slideshow-container img {
@@ -414,7 +416,7 @@ th {
 .slideshow-container {
   position: relative; /* Necesario para posicionar las flechas dentro de este contenedor */
   width: 100%;
-  max-width: 600px; /* Ajusta el tamaño según sea necesario */
+  /*max-width: 600px; /* Ajusta el tamaño según sea necesario */
   margin: auto;
 }
 
@@ -450,13 +452,14 @@ th {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+  color: #bdcbd4;
+  font-size: 18px;
+  padding: 15px 0%;
+  position: relative;
+  bottom: 0%;
   width: 100%;
   text-align: center;
+  letter-spacing: 1vh;
 }
 
 /* Number text (1/3 etc) */
@@ -502,12 +505,42 @@ th {
 
 @media screen and (max-width: 660px) {
 
-.slideshow-container img {
-height: 70vh;
-width: auto;
-}
+  /* .gallery .video .slideshow-container {
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+
+  } */
+
+
+  .gallery .video .slideshow-container img{
+
+    height: 70vh;
+    width: auto !important;
+    left: -66.66%;
+    text-align: center;
+    
+  }
+
+  .gallery .video .slideshow-container .mySlides:nth-child(2) img {
+    left: -33.33%;
+  }
+
+  .gallery .video .slideshow-container .mySlides:nth-child(3) img {
+    left: -75%;
+  }
+
+  .text{
+
+    width: 100%;
+
+  }
 
 }
+
+
 /*FONDO ANIMADO*/
 
 i {
@@ -650,7 +683,7 @@ overflow-x:hidden;
 
 }
 
-.gallery .video img {
+.gallery .video .portada .estrobo img {
 
   width: 100%; /* Mantén el 100% del ancho del contenedor */
   height: auto; /* Mantén el 100% del alto del contenedor */
