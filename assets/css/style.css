@@ -65,6 +65,8 @@ h1 {
 
 /*LOADING*/
 
+
+
 .loader {
   position: fixed;
   z-index: 99;
@@ -412,6 +414,8 @@ header #hamburger span:nth-child(3) {
 
 /*FONDO ANIMADO*/
 
+
+
 i {
   vertical-align: middle;
   display: inline-block;
@@ -507,6 +511,8 @@ overflow-x:hidden;
 
 /*GALERIA*/
 
+
+
 .gallery {
 
 
@@ -535,6 +541,10 @@ overflow-x:hidden;
   border-radius: 5px;
   opacity: 0;
 
+}
+
+.proceso video {
+  filter: grayscale(60%) !important;
 }
 
 .gallery.aparece li:nth-child(1){
