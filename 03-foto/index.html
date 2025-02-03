@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Diegui</title>
+  <link rel="icon" href="../gallery/diego.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/css/project-style.css">
+<script src="../assets/js/fondo-prefixfree.min.js"></script>
+<script  src="../assets/js/slideshow.js"></script>
+<meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+
+
+
+<!-- Header -->
+<div id="app">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Poppins" rel="stylesheet">
+	<header>
+	<div class="wrap">
+	<div id="hamburger" v-on:click="display_menu()">
+	<span></span>
+	<span></span>
+	<span></span>
+	</div>
+
+
+	<div class="nombrecito">
+	<h1>Diego Serrano</h1>
+	</div>
+
+
+
+	<nav id="menu">
+		<li><a href="..">Portfolio</a></li>
+
+		<li><a href="../00-forfun/index.html">Just Fun</a></li>
+
+		<li><a href="../contact/index.html">Contact</a></li>
+	<!--
+							
+							<li class="drop"><a v-on:click="display_drop_menu()">Menu 2 dropdown <i class="icon-arrow"></i></a>
+							<ul class="drop_menu">
+							<a>Sub menu 1</a>
+							<a>Sub menu 2</a>
+							<a>Sub menu 3</a>
+							</ul>
+							</li>						
+							<li class="drop"><a v-on:click="display_drop_menu()">Info  <i class="icon-arrow"></i></a>
+							<ul class="drop_menu">
+							<a>Sub menu 1</a>
+							<a>Sub menu 2</a>
+							<a>Sub menu 3</a>
+							</ul>
+							</li>
+							-->
+
+							
+							</nav>
+				
+							</div>
+							</header>
+		
+							</div>
+
+<!-- Body -->
+
+<ul class="gallery"> 
+
+	<div class="video"> 
+		
+		
+ 			<!-- <img src="procedimiento/Retratos.jpg" alt="Retratos">
+			<img src="procedimiento/Eventos.JPG" alt="Eventos">
+			<img src="procedimiento/Platillos.jpg" alt="Platillos">
+			<img src="procedimiento/Entornos.jpg" alt="Entornos"> -->
+
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 3</div>
+				  <img src="procedimiento/Retratos.jpg" style="width:100%">
+				  <div class="text">-RETRATOS-</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 3</div>
+				  <img src="procedimiento/Eventos.JPG" style="width:100%">
+				  <div class="text">-EVENTOS-</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 3</div>
+				  <img src="procedimiento/Platillos.jpg" style="width:100%">
+				  <div class="text">-PLATILLOS-</div>
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+				
+				</div>
+				<br>
+				
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+
+		
+		  
+		
+	</div>	
+	
+	<div class="about">
+		<h1>Fotógrafo | Observador</h1>
+		<p>
+			"Hoy en día cualquiera puede tomar una gran foto bonita, pero lo que realmente distingue a un fotógrafo es aquel que logra contar una historia con ella." - Olivia Vivanco		</p>
+		</br>
+		<h2> Observar desde el observador</h2>
+		<p>
+			Apasionado de la fotografía, encuentro en cada rincón una historia por contar, una emoción por capturar, un color que resalta. Han pasado 15 años desde que comencé a fotografiar, y he inmortalizado desde mi propio ser hasta mi entorno social. Y sí, también sé tomar fotos bonitas.		</p>
+	</div>
+
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+		
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+
+
+	<div class="imagenes">
+
+	<li><img src="procedimiento/cocineras01.jpg"/> <span class="name">-Cocineras-</span></li>
+	<li><img src="procedimiento/cocineras02.jpg"/>  <span class="name">-Cocineras-</span></li>
+	<li><img src="procedimiento/cocineras03.jpg"/> <span class="name">-Cocineras-</span></li>
+  	<li><img src="procedimiento/cocineras04.jpg"/> <span class="name">-Cocineras-</span></li>
+	
+	</div>
+
+
+	<div class="about">
+		<h2>Fotografía de todos colores y sabores</h2>
+		<p>
+			Me encanta capturar todo tipo de momentos: desde la esencia de una historia en formato documental, hasta el retrato más íntimo, pasando por los detalles de un evento o la perfección de un producto. Estoy abierto a cualquier propuesta que me permita explorar nuevas facetas de la fotografía. Además, siempre estoy dispuesto a compartir mis conocimientos impartiendo talleres para quienes deseen aprender este fascinante arte.		</p>
+
+	</div>
+
+
+
+
+	<div class="imagenes">
+
+	<li><img src="procedimiento/documental.jpg"/> <span class="name">Documentando</span></li>
+	<li><img src="procedimiento/retrato.jpg"/> <span class="name">Retratando</span></li>
+	<li><img src="procedimiento/evento.jpg"/> <span class="name">En Evento</span></li>
+	<li><img src="procedimiento/producto.jpg"/> <span class="name">Con Producto</span></li>
+	
+	</div>
+
+	<a href="https://www.flickr.com/photos/dieguitoserrano/">
+	<div class="peque">
+
+		<p>
+		<FONT SIZE=3vw>
+		<h3>Enlace fotográfico en Flickr</h3>
+		</span>
+		</FONT> 
+		</p>
+
+	</div>
+	</a>
+
+</ul>
+
+<!-- Foot -->
+
+
+<footer>
+
+	<div class="pie"> 
+	<li><a>Los Cabos, Baja California Sur, México </a></li> 
+	</div>
+
+
+	<!-- <div class="redes"> 
+	<li><a> <img src="gallery/social/instagram.svg" alt="Instagram"> </a></li> 
+	<li><a> <img src="gallery/social/tiktok.svg" alt="Tik Tok"> </a></li> 
+	</div> -->
+
+	<div class="pie"> 
+ 	<li><a>Copyright © 2025 Diego Serrano</a></li> 
+	</div>
+
+</footer>
+
+
+
+
+<!-- partial:index.partial.html -->
+
+<svg 
+  class="bokeh" 
+  viewBox="0 0 10 10" 
+  xmlns="http://www.w3.org/2000/svg" 
+  preserveAspectRatio="xMidYMid slice meet">
+
+  <circle cx="10%" cy="85%" r="80%" fill="#46c"  />
+  <circle cx="45%" cy="50%" r="20%" fill="#69c" />
+  <circle cx="85%" cy="35%" r="30%" fill="#626" />
+  <circle cx="60%" cy="85%" r="25%" fill="#c63" />
+  <circle cx="45%" cy="50%" r="30%" fill="#69c" />
+  <circle cx="35%" cy="25%" r="20%" fill="#626" />
+  <circle cx="90%" cy="-25%" r="35%" fill="#c63" />
+  <circle cx="-15%" cy="30%" r="40%" fill="#69c" />
+  <circle cx="65%" cy="85%" r="55%" fill="#626" />
+</svg>
+<!-- partial -->
+
+<!-- Scripts -->
+<script src="../assets/js/vue.js"></script>
+<script  src="../assets/js/header.js"></script>
+
+
+
+
+</body>
+</html>
